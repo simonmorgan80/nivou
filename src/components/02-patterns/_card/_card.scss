@@ -1,0 +1,21 @@
+.card {
+    border: 1px solid $border-color;
+    background-color: $lightgrey;
+    padding: 24px;
+}
+
+.card--small {
+    padding: 10px;
+}
+
+.card_header {
+    
+}
+
+.card_detail {
+
+}
+
+.card_link {
+    text-transform: uppercase;
+}

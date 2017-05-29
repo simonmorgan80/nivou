@@ -1,0 +1,126 @@
+.section {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    position: relative;
+
+    @include respond-to(small) {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    @include respond-to(large) {
+        padding-bottom: 75px;
+        padding-top: 75px;
+    }
+}
+
+.section--centered {
+    
+    @include respond-to(medium) {
+        align-items: center;
+        display: flex;
+        
+        .container-fluid {
+            width: 100%;
+        }   
+    }
+}
+
+.section--fullheight {
+    min-height: 100vh;
+}
+
+.section--background {
+    padding-bottom: 0;
+    padding-top: 0;
+
+    @include respond-to(medium) {
+        min-height: 100vh;
+    }
+}
+
+.section--carousel {
+
+    .section_image {
+        display: none;
+
+        @include respond-to(medium) {
+            display: block;
+        }
+    }
+
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.section_image {
+    // background-color: $lightgrey;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
+
+    @include respond-to(medium) {
+        bottom: 0;
+        height: auto;
+        left: 0;
+        padding-top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.section--overlap {
+
+    .container-fluid {
+        padding-bottom: 24px;
+        padding-top: 24px;
+    }
+
+    @include respond-to(small) {
+    
+        .container-fluid {
+            margin-top: -10%;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            position: relative;
+            z-index: 100;
+        }
+    }
+
+    @include respond-to(large) {
+
+        .container-fluid {
+            padding-bottom: 75px;
+            padding-top: 75px;
+        }
+    }
+}
+
+
+
+.col-media {
+    
+
+    @include respond-to(small) {
+        float: left;
+        margin-left: calc(-50vw + 50%);
+        margin-right: calc(-50vw + 50%);
+        width: 50vw;
+    }
+}
+
+.col-media--right { 
+
+    @include respond-to(small) {
+        float: right;
+    }
+}
+
+
+

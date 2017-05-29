@@ -1,0 +1,68 @@
+.carousel_cell {
+    width: 100%;
+}
+
+.carousel_image {
+    display: block;
+}
+
+.flickity-page-dots {
+    bottom: 5px;
+    left: 0;
+
+    .dot {
+        background: #fff;
+        margin: 0 4px;
+        opacity: 1;
+    }
+
+    .is-selected {
+        background: $green;
+    }
+}
+
+.flickity-prev-next-button {
+    background: rgba($green, 0.9);
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+
+    &:hover {
+        background: $green;
+    }
+
+    .arrow {
+        fill: #fff;
+    }
+
+    @include respond-to('medium') {
+        
+        &.next,
+        &.previous {
+            left: auto;
+            right: 30px
+        }
+
+        &.next {
+            margin-top: -25px;
+        }
+
+        &.previous {
+            margin-top: 25px;
+        }
+
+    }
+
+    @include respond-to('large') {
+        height: 70px;
+        width: 70px;
+
+        &.next {
+            margin-top: -50px;
+        }
+
+        &.previous {
+            margin-top: 50px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+$screen-xs-min: 320px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+$breakpoints: (
+    'xsmall' : ( min-width: #{$screen-xs-min}),
+    'small'  : ( min-width: #{$screen-sm-min}), 
+    'medium' : ( min-width: #{$screen-md-min}),
+    'large'  : ( min-width: #{$screen-lg-min})
+);
+
+$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$font-family-headings: $font-family-base;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+
+
+$darkblue: #13123a;
+
+
+$lightgrey: #EAE6E6;
+$darkgrey: #323232;
+$green: #00A700;
+
+$text-color: $darkgrey;
+$border-color: $lightgrey;
+$button-color: $darkblue;

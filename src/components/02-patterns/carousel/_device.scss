@@ -1,0 +1,45 @@
+.device {
+    margin: 0 auto;
+    
+    @include respond-to('medium') {
+        max-width: 60%;
+    }
+}
+
+.device_inner {
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 0;
+    overflow: hidden;
+    padding-top: 62%;
+    position: relative;
+
+    @include respond-to('medium') {
+        padding-top: 70%;
+        margin: 0 auto;
+    }
+}
+
+.device_inner--imac {
+    
+    @include respond-to('medium') {
+        background-image: url(/images/device-imac.png);
+    }
+}
+
+.device_screen {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @include respond-to('medium') {
+        bottom: 26.5%;
+        left: 12.5%;
+        right: 12.5%;
+        top: 7%;
+    }
+}

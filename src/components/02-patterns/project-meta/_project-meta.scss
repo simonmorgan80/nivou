@@ -1,0 +1,16 @@
+.project-meta {
+    
+    position: relative;
+
+    @include respond-to(small) {
+        margin-top: 10vh;
+    }
+}
+
+.project-meta_item {
+    margin-bottom: 1em;
+}
+
+.project-meta_detail {
+    margin-bottom: 0;
+}

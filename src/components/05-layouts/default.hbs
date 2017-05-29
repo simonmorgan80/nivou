@@ -1,0 +1,21 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ _target.title }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="{{ path '/styles/style.css' }}?v=0.1">
+
+        <!-- <script src="{{ path '/js/libs/modernizr.min.js' }}"></script> -->
+    </head>
+    <body>
+
+        {{{ yield }}}
+
+        <script src="{{ path '/scripts/libs.min.js' }}"></script>
+        <script src="{{ path '/scripts/app.min.js' }}"></script>
+    </body>
+</html>

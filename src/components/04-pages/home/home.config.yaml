@@ -1,0 +1,6 @@
+title: Home page
+status: wip
+context:
+    hero:
+        title: "Homepage"
+        content: "This is the homepage hero content"
