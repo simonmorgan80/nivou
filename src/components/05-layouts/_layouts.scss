@@ -6,8 +6,17 @@
     max-width: 1200px;
 }
 
+.container-fullwidth {
+    max-width: none;   
+}
+
 .background--white {
     background-color: #fff;
+}
+
+.background--green {
+    background-color: $green;   
+    color: #fff;
 }
 
 img {

@@ -1,0 +1,30 @@
+.blockquote {
+    font-size: 24px;
+    margin-bottom: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+
+    @include respond-to(large) {
+        font-size: 48px;
+    }
+}
+
+.blockquote_name,
+.blockquote_cite {
+    display: block;   
+    font-size: 18px;
+    font-style: normal;
+
+    @include respond-to(large) {
+        font-size: 36px;
+    }
+}
+
+.blockquote_name {
+    
+}
+
+.blockquote_cite {
+    
+}

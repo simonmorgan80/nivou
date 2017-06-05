@@ -47,7 +47,7 @@ h6 {
     margin-bottom: 12px;
 }
 
-.heading-line {
+.divider-line {
     padding-bottom: .5em;
     position: relative;
 
@@ -55,22 +55,29 @@ h6 {
         content: '';
         border-bottom: 2px solid $green;
         bottom: 0;
-        left: 0;
+        // left: 0;
         position: absolute;
         width: 50px;
     }
 }
 
-// .heading-line--centered { 
+.divider-line--white {
 
-//     &:after {
-//         left: 50%;
-//         transform: translateX(-50%);
-//     }
-// }
+    &:after {
+        border-bottom-color: #fff;
+    }
+}
 
 .heading--uppercase { 
     text-transform: uppercase;
+}
+
+.lead {
+    font-size: 18px;
+}
+
+.text-green {
+    color: $green;
 }
 
 p, 
@@ -81,4 +88,20 @@ table,
 blockquote {
     margin-top: 0px;
     margin-bottom: 1.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+a {
+    border-bottom: 1px solid transparent;
+    color: $green;
+    padding-bottom: 4px;
+    text-decoration: none;
+    @include transition(border-color 0.2s ease-in);
+
+    &:hover {
+        border-bottom-color: $green;
+    }
 }
